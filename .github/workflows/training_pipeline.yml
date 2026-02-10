@@ -29,8 +29,8 @@ jobs:
     - name: Run training pipeline
       env:
         # Add your environment variables here
-        # Example: HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
-        # Example: OPENMETEO_API_KEY: ${{ secrets.OPENMETEO_API_KEY }}
+        HOPSWORKS_PROJECT_NAME: ${{ secrets.HOPSWORKS_PROJECT_NAME }}
+        HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
         PYTHONPATH: ${{ github.workspace }}
       run: |
         python -m pipelines.training_pipeline
