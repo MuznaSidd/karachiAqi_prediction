@@ -1,0 +1,38 @@
+# Location
+location:
+  city: "Karachi"
+  latitude: 24.8607
+  longitude: 67.0011
+
+# Features
+features:
+  pollutants:
+    - pm2_5
+    - pm10
+    - carbon_monoxide
+    - nitrogen_dioxide
+    - sulphur_dioxide
+    - ozone
+    - aerosol_optical_depth
+  
+  weather:
+    - temperature_2m
+    - relative_humidity_2m
+    - wind_speed_10m
+    - wind_direction_10m
+    - surface_pressure
+  
+  lag_windows: [1, 3, 6, 12, 24]
+  rolling_windows: [3, 6, 12, 24]
+
+# Training
+training:
+  test_size: 0.2
+  random_state: 42
+  
+# Hopsworks 
+hopsworks:
+  enabled: true 
+  project_name: "AQIpredictor_karachi"
+
+
