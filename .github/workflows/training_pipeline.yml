@@ -33,7 +33,7 @@ jobs:
         HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
         PYTHONPATH: ${{ github.workspace }}
       run: |
-        python -m pipelines.training_pipeline
+        python -m src.training.training_pipeline
     
     - name: Pipeline execution summary
       if: always()
