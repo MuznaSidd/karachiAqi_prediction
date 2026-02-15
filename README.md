@@ -237,7 +237,8 @@ HOPSWORKS_API_KEY=your_api_key
 HOPSWORKS_PROJECT_NAME=your_project_name
 ```
 
-📸 Visual Preview
+**Visual Preview**
+
 ![aproject final final output](https://github.com/user-attachments/assets/46f9eb6c-147a-476f-8ff7-0f887226cae2)
 ![aproject ff output 2](https://github.com/user-attachments/assets/b2075e7c-1ec8-4af5-8315-d4455eb0b7b6)
 
@@ -258,9 +259,9 @@ HOPSWORKS_PROJECT_NAME=your_project_name
 # Author
 
 **Muzna Siddiqui**
+
 Karachi, Pakistan
+
 AQI Forecasting System – End-to-End MLOps Project
 
 ---
-
-If you send me your Streamlit link, I can insert it cleanly and make the final polished submission version for GitHub 🚀
