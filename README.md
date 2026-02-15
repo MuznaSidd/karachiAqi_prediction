@@ -231,10 +231,12 @@ streamlit run app/streamlit_app.py
 Set in `.env`:
 
 ```
-LOCAL_FEATURE_STORE=0
-HOPSWORKS_HOST=your_host_url
 HOPSWORKS_API_KEY=your_api_key
 HOPSWORKS_PROJECT_NAME=your_project_name
+
+CITY_NAME=Karachi
+LATITUDE=24.8607
+LONGITUDE=67.0011
 ```
 ---
 
