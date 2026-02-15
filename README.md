@@ -45,7 +45,7 @@ The entire workflow follows production-level MLOps practices.
 * Pulls latest features from Feature Store
 * Applies time-series aware split
 * Trains multiple regression models
-* Evaluates using RMSE and R²
+* Evaluates using RMSE,MAE and R²
 * Selects best model per forecast day
 * Registers models in Hopsworks Model Registry
 
@@ -238,7 +238,7 @@ HOPSWORKS_PROJECT_NAME=your_project_name
 ```
 ---
 
-## Visual Preview Of The Dashboard
+## 🌐 Visual Preview Of The Dashboard
 
 ![aproject final final output](https://github.com/user-attachments/assets/46f9eb6c-147a-476f-8ff7-0f887226cae2)
 ![aproject ff output 2](https://github.com/user-attachments/assets/b2075e7c-1ec8-4af5-8315-d4455eb0b7b6)
