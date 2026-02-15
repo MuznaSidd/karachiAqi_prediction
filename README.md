@@ -184,7 +184,7 @@ AQI/
 🚀 **Streamlit App:**
 
 ```
-https://muzna-karachi-aqipredictor-project.streamlit.app/
+https://karachi-aqi-prediction.streamlit.app/
 ```
 
 ---
