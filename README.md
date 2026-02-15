@@ -1,16 +1,16 @@
-# Karachi AQI Forecasting System
+# Pearls AQI Predictor
 
 Default City: Karachi
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)  ![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)
 
-Objective: Predict and monitor Air Quality Index (AQI) trends using EPA-based AQI computation, multi-model forecasting and end-to-end MLOps integration.
+**Objective**: Predict and monitor Air Quality Index (AQI) trends using EPA-based AQI computation, multi-model forecasting and end-to-end MLOps integration.
 
 ---
 
 ## 📖 Overview
 
-Karachi AQI Forecasting System is a fully automated Air Quality Index (AQI) forecasting solution built for **Karachi**.
+Pearls AQI Predictor is a fully automated Air Quality Index (AQI) forecasting solution built for **Karachi**.
 
 The system:
 
