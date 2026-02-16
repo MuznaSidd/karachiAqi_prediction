@@ -4,7 +4,7 @@ Default City: Karachi
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)  ![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)
 
-**Objective**: Predict and monitor Air Quality Index (AQI) trends using EPA-based AQI computation, multi-model forecasting and end-to-end MLOps integration.
+**Objective**: To predict and monitor Air Quality Index (AQI) trends using EPA-based AQI computation, multi-model forecasting and end-to-end MLOps integration.
 
 ---
 
@@ -18,10 +18,10 @@ The system:
 * Computes AQI using official EPA standards
 * Performs data validation and cleaning
 * Engineers time-series features
-* Trains multiple ML models for 1–3 day forecasting
-* Registers models in Hopsworks Model Registry
-* Deploys predictions using Streamlit
-* Automates feature and training pipelines using GitHub Actions
+* Trains multiple ML models (Ridge,Xgboost,Randonforest) for 1–3 day AQI forecasting
+* Register all models in Hopsworks Model Registry
+* Deploy predictions using Streamlit
+* Automates feature and training pipeline using GitHub Actions
 
 The entire workflow follows production-level MLOps practices.
 
@@ -49,7 +49,7 @@ The entire workflow follows production-level MLOps practices.
 * Selects best model per forecast day
 * Registers models in Hopsworks Model Registry
 
-Models trained separately for:
+Three Models are trained for:
 
 * Day 1 Forecast
 * Day 2 Forecast
@@ -252,7 +252,7 @@ LONGITUDE=67.0011
 * EPA-based AQI computation
 * Multi-model AQI forecasting (1–3 days)
 * Model Registry versioning
-* Forecasting and visualization dashboard
+* AQI Forecast and EDA dashboard
 * CI/CD automation
 * Explainable AI integration
 * End-to-end MLOps implementation
@@ -265,6 +265,6 @@ LONGITUDE=67.0011
 
 Karachi, Pakistan
 
-AQI Forecasting System – End-to-End MLOps Project
+AQI Forecasting System For Karachi– End-to-End MLOps Project
 
 ---
