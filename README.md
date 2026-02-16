@@ -4,7 +4,7 @@ Default City: Karachi
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)  ![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)
 
-**Objective**: To predict and monitor Air Quality Index (AQI) trends using EPA-based AQI computation, multi-model forecasting and end-to-end MLOps integration.
+**Objective**: To predict and monitor Air Quality Index (AQI) of Karachi for three days using end-to-end MLOps integration.
 
 ---
 
