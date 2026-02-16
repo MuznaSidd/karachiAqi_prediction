@@ -14,11 +14,11 @@ Pearls AQI Predictor is a fully automated Air Quality Index (AQI) forecasting so
 
 The system:
 
-* Fetches historical and live pollutant + weather data
+* Fetches historical and live aqi pollutants + weather data using **Openmeteo api**
 * Computes AQI using official EPA standards
 * Performs data validation and cleaning
 * Engineers time-series features
-* Trains multiple ML models (Ridge,Xgboost,Randonforest) for 1–3 day AQI forecasting
+* Trains multiple ML models (Ridge,Xgboost,Randomforest) for 1–3 day AQI forecasting
 * Register all models in Hopsworks Model Registry
 * Deploy predictions using Streamlit
 * Automates feature and training pipeline using GitHub Actions
@@ -31,10 +31,11 @@ The entire workflow follows production-level MLOps practices.
 
 ### Feature Pipeline (Hourly / Incremental)
 
-* Fetches pollutant and weather data
+* Fetches pollutant and weather data from Open meteo
 * Performs one-year historical backfill (initial setup)
-* Applies data cleaning and validation
 * Computes AQI using EPA breakpoint tables
+* Applies data cleaning and validation
+* Uploads the features into feature store
 * Engineers time-based features
 * Inserts only new records afterwards into Feature Store to avoid duplication of data
 
@@ -44,10 +45,10 @@ The entire workflow follows production-level MLOps practices.
 
 * Pulls latest features from Feature Store
 * Applies time-series aware split
-* Trains multiple regression models
+* Trains multiple ml models
 * Evaluates using RMSE,MAE and R²
 * Selects best model per forecast day
-* Registers models in Hopsworks Model Registry
+* Registers models in Hopsworks Model Registry with proper versioning
 
 Three Models are trained for:
 
@@ -59,7 +60,7 @@ Three Models are trained for:
 
 ### Streamlit Dashboard
 
-* Loads latest BEST model automatically
+* Loads latest BEST model for each day automatically
 * Displays 1, 2, 3 day AQI forecasts
 * Includes EDA visualizations
 * Fetches latest data dynamically
@@ -126,7 +127,7 @@ AQI calculated using official EPA interpolation rules.
 * **Visualization:** Streamlit, Matplotlib
 * **Explainability:** SHAP
 * **MLOps:** Hopsworks Feature Store & Model Registry
-* **Automation:** GitHub Actions
+* **Automation:** GitHub Actions (CI/CD)
 
 ---
 
@@ -248,10 +249,11 @@ LONGITUDE=67.0011
 
 ## Results & Achievements
 
-* One-year historical backfill
+* One-year historical backfill of AQI pollutants+weather data
 * EPA-based AQI computation
+* Features stored into Hopsworks feature store
+* Models uploaded into Model Registry with proper versioning
 * Multi-model AQI forecasting (1–3 days)
-* Model Registry versioning
 * AQI Forecast and EDA dashboard
 * CI/CD automation
 * Explainable AI integration
