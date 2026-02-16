@@ -17,7 +17,7 @@ The system:
 * Fetches historical and live aqi pollutants + weather data using **Openmeteo api**
 * Computes AQI using official EPA standards
 * Performs data validation and cleaning
-* Engineers time-series features
+* Engineers time-series features and uploads the features into Hopsworks feature store
 * Trains multiple ML models (Ridge,Xgboost,Randomforest) for 1–3 day AQI forecasting
 * Register all models in Hopsworks Model Registry
 * Deploy predictions using Streamlit
